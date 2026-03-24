@@ -1,0 +1,30 @@
+{
+  "version": "2026-03-24-v1",
+  "model": {
+    "primary": "deepseek/chat",
+    "fallbacks": [
+      "deepseek/reasoner",
+      "openrouter/auto"
+    ],
+    "allowedModels": [
+      "deepseek/chat",
+      "deepseek/reasoner",
+      "openrouter/auto"
+    ]
+  },
+  "security": {
+    "sandbox": "all",
+    "denyTools": ["group:web"]
+  },
+  "integrations": {
+    "github": {
+      "repoOwner": "vyann755-755",
+      "repoName": "openc-dev-config",
+      "defaultBranch": "main"
+    }
+  },
+  "notes": {
+    "description": "OpenClaw config baseline for fast, free model usage with GitHub automation.",
+    "why": "Fast path for simple Q&A; escalates to powerful models for complex tasks."
+  }
+}
